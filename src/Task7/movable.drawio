@@ -1,0 +1,48 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Movable" id="movable-uml">
+    <mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="movable" value="&lt;&lt;interface&gt;&gt;&lt;br&gt;&lt;b&gt;Movable&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="40" width="200" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="movable-m" value="+ moveUp(): void&#xa;+ moveDown(): void&#xa;+ moveLeft(): void&#xa;+ moveRight(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="movable">
+          <mxGeometry y="40" width="200" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="mp" value="&lt;b&gt;MovablePoint&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="320" width="220" height="190" as="geometry"/>
+        </mxCell>
+        <mxCell id="mp-f" value="- x: int&#xa;- y: int&#xa;- xSpeed: int&#xa;- ySpeed: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="mp">
+          <mxGeometry y="26" width="220" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="mp-m" value="+ moveUp(): void&#xa;+ moveDown(): void&#xa;+ moveLeft(): void&#xa;+ moveRight(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="mp">
+          <mxGeometry y="96" width="220" height="94" as="geometry"/>
+        </mxCell>
+        <mxCell id="mr" value="&lt;b&gt;MovableRectangle&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="320" width="240" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="mr-f" value="- topLeft: MovablePoint&#xa;- bottomRight: MovablePoint" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="mr">
+          <mxGeometry y="26" width="240" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="mr-m" value="+ moveUp(): void&#xa;+ moveDown(): void&#xa;+ moveLeft(): void&#xa;+ moveRight(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="mr">
+          <mxGeometry y="70" width="240" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=block;endFill=0;endSize=12;" edge="1" parent="1" source="mp" target="movable">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=block;endFill=0;endSize=12;" edge="1" parent="1" source="mr" target="movable">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" value="2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=diamondThin;startFill=1;startSize=14;" edge="1" parent="1" source="mr" target="mp">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="540"/>
+              <mxPoint x="170" y="540"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

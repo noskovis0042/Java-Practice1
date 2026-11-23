@@ -5,7 +5,6 @@ public class Author {
     private String email;
     private char gender;
 
-    // Конструктор: убран 'void', имя совпадает с именем класса
     public Author(String name, String email, char gender) {
         this.name = name;
         this.email = email;

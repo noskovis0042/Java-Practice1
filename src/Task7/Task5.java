@@ -1,3 +1,5 @@
+package Task7;
+
 import java.util.Scanner;
 
 // Интерфейс для работы со строками
@@ -12,7 +14,7 @@ interface StringProcessor {
     String reverse(String s);
 }
 
-// Класс ProcessStrings, реализующий интерфейс
+// Класс Task7.ProcessStrings, реализующий интерфейс
 class ProcessStrings implements StringProcessor {
 
     @Override
@@ -38,7 +40,7 @@ class ProcessStrings implements StringProcessor {
 }
 
 
-public class Task7_5 {
+public class Task5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите строку для обработки: ");
