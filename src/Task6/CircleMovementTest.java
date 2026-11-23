@@ -1,3 +1,5 @@
+package Task6;
+
 // 1. Интерфейс движения
 interface Movable {
     void moveUp();
@@ -34,7 +36,7 @@ class MovablePoint implements Movable {
 
     @Override
     public String toString() {
-        return String.format("MovablePoint(x=%d, y=%d, xSpeed=%d, ySpeed=%d)", x, y, xSpeed, ySpeed);
+        return String.format("Task6.MovablePoint(x=%d, y=%d, xSpeed=%d, ySpeed=%d)", x, y, xSpeed, ySpeed);
     }
 }
 
@@ -62,15 +64,15 @@ class MovableCircle implements Movable {
 
     @Override
     public String toString() {
-        return "MovableCircle(radius=" + radius + ", center=" + center + ")";
+        return "Task6.MovableCircle(radius=" + radius + ", center=" + center + ")";
     }
 }
 
 
 // 5. Главный класс приложения для запуска и тестирования
-public class Task6_1 {
+public class CircleMovementTest {
     public static void main(String[] args) {
-        System.out.println("=== 1. Тестирование MovablePoint ===");
+        System.out.println("=== 1. Тестирование Task6.MovablePoint ===");
         MovablePoint p = new MovablePoint(0, 0, 2, 3);
         System.out.println("До: " + p);
         p.moveRight();
@@ -78,7 +80,7 @@ public class Task6_1 {
         p.moveDown();
         System.out.println("После: " + p);
 
-        System.out.println("\n=== 2. Тестирование MovableCircle ===");
+        System.out.println("\n=== 2. Тестирование Task6.MovableCircle ===");
         MovableCircle c = new MovableCircle(5, 5, 1, 1, 10);
         System.out.println("До: " + c);
         c.moveLeft();
